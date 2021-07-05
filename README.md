@@ -1,5 +1,7 @@
 # jonaskabalodev
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e496432c-9937-4211-a101-8d8787e991bb/deploy-status)](https://app.netlify.com/sites/jonaskabalodev/deploys)
+
 ## Build Setup
 
 ```bash
