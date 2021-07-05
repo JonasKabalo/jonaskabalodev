@@ -3,11 +3,11 @@ name: jonaskabalodev
 on:
   push:
     branches:
-      - main
+      - statu_check
       - master
   pull_request:
     branches:
-      - main
+      - statu_check
       - master
 
 jobs:
