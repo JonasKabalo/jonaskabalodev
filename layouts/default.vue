@@ -1,21 +1,25 @@
 <template>
-  <div>
+  <div class="text-center">
     <NuxtLink to="/">
-      Home page
-    </NuxtLink>
+      Home
+    </NuxtLink>-
     <NuxtLink to="/about">
       About
     </NuxtLink>
-    <Nuxt />
+    <transition name="home">
+      <Nuxt />
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'Header'
+  layout: 'Header',
+  transition: 'home'
 }
 </script>
 
 <style>
-
+.home-enter-active, .home-leave-active { transition: opacity .5s; }
+.home-enter, .home-leave-active { opacity: 0; }
 </style>

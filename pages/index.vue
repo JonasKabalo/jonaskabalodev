@@ -1,11 +1,16 @@
 <template>
   <div>
     <h1 class="text-center">
-      HELLO
+      Home
     </h1>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
+
+<style>
+
+</style>
