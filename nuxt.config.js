@@ -54,7 +54,7 @@ export default {
     register: true,
     scope: '/',
     dest: 'public',
-    swSrc: 'static/sw.js'
+    swSrc: 'sw.js'
   }, */
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
