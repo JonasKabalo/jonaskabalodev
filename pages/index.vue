@@ -1,9 +1,29 @@
 <template>
-  <h1 class="text-center">
-    HELLO
-  </h1>
+  <div>
+    <h1 class="text-center">
+      Home
+      {{ dd }}
+    </h1>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => ({
+    dd: 'test'
+  }),
+  mounted () {
+    console.log('here')
+    this.test()
+  },
+  methods: {
+    test () {
+      console.log('hreeeeee')
+    }
+  }
+}
 </script>
+
+<style>
+
+</style>

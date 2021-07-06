@@ -1,5 +1,6 @@
 export default {
   target: 'static',
+  dev: process.env.NODE_ENV !== 'production',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -14,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/jk.ico' }
     ]
   },
 
@@ -32,6 +33,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
+    // '@nuxtjs/pwa'
     '@nuxtjs/eslint-module'
   ],
 
@@ -45,6 +47,15 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  /* pwa: {
+    icon: false,
+    disable: process.env.NODE_ENV === 'development',
+    register: true,
+    scope: '/',
+    dest: 'public',
+    swSrc: 'sw.js'
+  }, */
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
