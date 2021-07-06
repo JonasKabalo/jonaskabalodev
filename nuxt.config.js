@@ -33,8 +33,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/pwa'
+    // '@nuxtjs/pwa'
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,14 +48,14 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
-  pwa: {
+  /* pwa: {
     icon: false,
     disable: process.env.NODE_ENV === 'development',
     register: true,
     scope: '/',
     dest: 'public',
-    swSrc: 'service-worker.js'
-  },
+    swSrc: 'static/sw.js'
+  }, */
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
