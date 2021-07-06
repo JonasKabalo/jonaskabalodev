@@ -1,5 +1,6 @@
 export default {
   target: 'static',
+  dev: process.env.NODE_ENV !== 'production',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -10,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portfolio of a Dev Inspiration' },
+      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -32,7 +33,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -45,6 +47,15 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  pwa: {
+    icon: false,
+    disable: process.env.NODE_ENV === 'development',
+    register: true,
+    scope: '/',
+    dest: 'public',
+    swSrc: 'service-worker.js'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
