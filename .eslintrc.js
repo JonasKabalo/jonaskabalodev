@@ -7,7 +7,7 @@ module.exports = {
   parserOptions: {
     parser: '@babel/eslint-parser',
     requireConfigFile: false,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   extends: [
     '@nuxtjs',
@@ -16,10 +16,10 @@ module.exports = {
     'plugin:vue/vue3-recommended'
   ],
   globals: {
-    __static: true,
+    __static: true
   },
   plugins: [
-    'vue', 'html'
+    'vue'
   ],
   // add your custom rules here
   rules: {
