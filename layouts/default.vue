@@ -1,11 +1,6 @@
 <template>
-  <div class="text-center">
-    <NuxtLink to="/">
-      Home
-    </NuxtLink>-
-    <NuxtLink to="/about">
-      About
-    </NuxtLink>
+  <div id="main-container">
+    <Navigation />
     <transition name="home">
       <Nuxt />
     </transition>
@@ -14,8 +9,11 @@
 
 <script>
 export default {
-  layout: 'Header',
-  transition: 'home'
+  layout: 'Main',
+  transition: {
+    name: 'home',
+    mode: 'out-in'
+  }
 }
 </script>
 

@@ -4,23 +4,35 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'jonaskabalodev',
+    title: 'Jonas-Dev',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Welcome to my Portfolio - FrontEnd Developer - BackEnd Developer' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/jk.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/jk-dev.ico' }
+    ],
+    script: [
+      {
+        type: 'text/javascript',
+        src: '/script.js',
+        body: true
+      }
     ]
+  },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.css',
+    '@/assets/css/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -39,9 +51,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios'
   ],
 
