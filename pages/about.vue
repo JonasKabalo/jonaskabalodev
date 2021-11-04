@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <h1 class="text-center">
-      About
-    </h1>
+  <div class="text-center">
+    Working progress...
   </div>
 </template>
 
