@@ -1,13 +1,13 @@
 <template>
-  <div class="text-center">
+  <span class="text-center">
     {{ welcomeWord }}
-  </div>
+  </span>
 </template>
 
 <script>
 export default {
   data: () => ({
-    titleWelcome: '',
+    titleWelcome: 'Hello',
     dataWordWelcome: [{
       language: 'English',
       hello: 'Welcome!'
@@ -436,7 +436,7 @@ export default {
       return welcomeWord
     }
   },
-  mounted () {
+  beforeMount () {
     this.setIntervalValue()
   },
   beforeUnmount () {

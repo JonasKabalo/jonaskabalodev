@@ -3,8 +3,11 @@
     <NuxtLink to="/">
       Home
     </NuxtLink>-
-    <NuxtLink to="/about">
-      About
+    <NuxtLink to="/contact">
+      Contact
+    </NuxtLink>-
+    <NuxtLink to="">
+      Log in
     </NuxtLink>
   </div>
 </template>
