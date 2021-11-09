@@ -1,6 +1,8 @@
 <template>
   <div class="text-center">
-    Working progress...
+    <h1 style="margin-top:100px">
+      Working progress...
+    </h1>
   </div>
 </template>
 

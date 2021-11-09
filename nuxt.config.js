@@ -46,8 +46,13 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/pwa'
+    '@nuxtjs/style-resources',
     '@nuxtjs/eslint-module'
   ],
+
+  styleResources: {
+    scss: '@/assets/css/main.scss'
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

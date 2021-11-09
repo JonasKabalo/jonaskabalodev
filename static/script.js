@@ -1,4 +1,4 @@
 /* eslint-disable eqeqeq */
 (function () {
-  console.log('Connected...')
+  console.log('[S] Connected')
 }())
