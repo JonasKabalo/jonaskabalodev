@@ -5,7 +5,7 @@
       <!-- p>👋 Hi! My name is Jonas</p -->
       <div class="card-presentation">
         <div class="card-main">
-          <h4>The true sign of intelligence is not knowledge but imagination.</h4>
+          <h4>The true sign of intelligence is not knowledge but imagination <small>A.E</small></h4>
         </div>
       </div>
     </div>
@@ -29,6 +29,11 @@ export default {
   }
   .card-presentation {
     margin: $margin_10_10;
+    .card-main {
+      small {
+        font-size: $size-s-06;
+      }
+    }
   }
 }
 </style>

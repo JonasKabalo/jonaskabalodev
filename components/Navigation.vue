@@ -5,9 +5,6 @@
     </NuxtLink>-
     <NuxtLink to="/contact">
       Contact
-    </NuxtLink>-
-    <NuxtLink to="">
-      Log in
     </NuxtLink>
   </div>
 </template>
